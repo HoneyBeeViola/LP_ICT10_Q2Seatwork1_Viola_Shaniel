@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Quarter 2 Seatwork - Glee Club</title>
+
+    <style>
+        body {background-color: lightblue}
+        h1 {font-size: 45px; color: rgb(232, 244, 255); text-align: center;}
+        p, #result {color: rgb(240, 230, 146); font-size: 25px; text-align: center;}
+        form {display: flex; justify-content: center;}
+        .form-group {display: flex; flex-direction: column; align-items: center;}
+        .form-group input[type="text"] {outline: none; border-color: #357ca5; border-radius: 5px; width: 240px; height: 35px; font-size: 18px; text-align:center;}
+        .form-group input[type="button"] {padding: 10px 24px; border: none; border-radius: 8px; background-color: #357ca5; color: white;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Glee Club Member Checker</h1>
+        <p>Sing, with other people</p>
+    </header>
+
+    <main>
+  
+        <form>
+            <div class="form-group">
+                <input type="text" id="first_name" placeholder="Enter your first name">
+            <br>
+                <input type="text" id="last_name" placeholder="Enter your last name">
+            <br>
+                <input type="button" py-click="candidate_checker" value="Enter">
+            </div>
+        </form>
+        <div id="result"></div>
+
+    </main>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
